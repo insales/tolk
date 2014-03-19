@@ -6,9 +6,11 @@ module Tolk
     SafeYAML::OPTIONS[:deserialize_symbols] = true
 
     isolate_namespace Tolk
-    
-    initializer 'Tolk precompile hook' do |app|
-      app.config.assets.precompile += ['tolk/libraries.js']
+
+    if Rails.version >= '3.1'
+      initializer :assets do |app|
+        app.config.assets.precompile += ['tolk/libraries.js']
+      end
     end
   end
 end
