@@ -9,6 +9,12 @@ Tolk is a Rails 3 engine designed to facilitate the translators doing the dirty 
 
 To install add the following to your Gemfile:
 
+### Rails 3
+```ruby
+  gem 'tolk'
+```
+
+### Rails 4
 ```ruby
   gem 'tolk'
   gem 'protected_attributes'
