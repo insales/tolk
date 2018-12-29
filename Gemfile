@@ -4,7 +4,6 @@ gem "rails", "4.0.0"
 
 gem 'will_paginate'
 gem 'safe_yaml', '~> 1.0.0'
-gem 'protected_attributes'
 
 group 'test' do
   gem 'capybara'
